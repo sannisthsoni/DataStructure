@@ -19,7 +19,17 @@ def reverse(matrix):
         
     return matrix
 
+def inverse(matrix):
+    for matrix_col in matrix:
+        for i in range(len(matrix_col)):
+            if matrix_col[i] == 1:
+                matrix_col[i] = 0
+            else:
+                matrix_col[i] = 1
+    return matrix
+
 print(reverse([[1,1,0],[0,0,1]]))
+print(inverse([[1,1,0],[0,0,1]]))
 
 
 
