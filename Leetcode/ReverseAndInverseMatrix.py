@@ -42,3 +42,12 @@ print(flipAndInvertImage([[1,1,0],[1,0,1],[0,0,0]]))
 
 
 
+#After-Thoughts
+#In Solution v1.0, I could have done the inversing thing in the reverse function itself.
+#Still, it would never be as good and as efficient as the leetcode solution
+
+#Lessons
+#1. row[i], row[~i] = row[~i] ^ 1, row[i] ^ 1 does all the trick.
+#   The operator ^ inverses the bit
+#   row[i] & row[~i] correspond to each other. row[i] is as much away from start as
+#   row[~i] is away from the end
