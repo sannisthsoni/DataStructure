@@ -46,3 +46,10 @@ def matrixReshape(self, nums, r, c):
 #     return matrix
 # #print(MatrixToList([[1,2],[3,4]]))
 # print(ListToMatrix([1,2,3,4,5,6,7,8,9,10],5,2))
+
+
+#Lessons:
+#Exploit the use of range(0,limit,step_size) & slicing of array in
+#if r*c == len(one_row):
+#            for i in range(0,len(one_row),c):
+#                matrix.append(one_row[i:i+c])
