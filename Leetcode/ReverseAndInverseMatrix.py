@@ -7,6 +7,15 @@
 # To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0. 
 # For example, inverting [0, 1, 1] results in [1, 0, 0].
 
+#Solution v 1.1 (From Leetcode) https://leetcode.com/problems/flipping-an-image/solution/
+def flipAndInvertImage(A):
+        for row in A:
+            for i in range(int((len(row) + 1) / 2)):
+                row[i], row[~i] = row[~i] ^ 1, row[i] ^ 1
+        return A
+
+print(flipAndInvertImage([[1,1,0],[1,0,1],[0,0,0]]))
+
 # Solution v 1.0
 # def reverse(matrix):
 #     for matrix_col in matrix:
